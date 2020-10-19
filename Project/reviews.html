@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="media/favicon.png" />
+    <title>Thanks a Latte: Reviews</title>
+    <link rel="stylesheet" href="./css/master.css" />
+  </head>
+  <body>
+    <script src="./javascript/header.js"></script>
+
+    <div id="page_container">
+      <div id="all_reviews_container">
+        <div id="latest_reviews_container">
+          <h1>LATEST REVIEWS</h1>
+          <div class="overall_rating">
+            <p id="overall_rating_text">0 people have rated us</p>
+            <div id="overallStars">
+              <span id="star_o1">☆</span><span id="star_o2">☆</span
+              ><span id="star_o3">☆</span><span id="star_o4">☆</span
+              ><span id="star_o5">☆</span>
+            </div>
+          </div>
+        </div>
+        <div id="user_reviews"></div>
+      </div>
+
+      <div id="give_review_container">
+        <h2>WANT TO LEAVE A REVIEW?</h2>
+
+        <textarea
+          name="Text"
+          cols="40"
+          rows="5"
+          id="user_text_review"
+          placeholder="Please write your review here..."
+          required
+        ></textarea>
+
+        <div id="user_name">
+          <label for="name"
+            >Name:&nbsp;&nbsp;<input type="text" id="name" name="Name" required
+          /></label>
+        </div>
+
+        <div id="input_email">
+          <label for="user_email"
+            >Email:&nbsp;<input
+              type="email"
+              id="user_email"
+              name="User email"
+              required
+          /></label>
+        </div>
+
+        <div id="star_rating">
+          <label>Choose a rating:</label>
+          <div
+            class="rating"
+            onmouseover="hoverStars()"
+            onmouseout="drawStars()"
+          >
+            <span id="star5" onclick="getUserRating(5)">☆</span>
+            <span id="star4" onclick="getUserRating(4)">☆</span>
+            <span id="star3" onclick="getUserRating(3)">☆</span>
+            <span id="star2" onclick="getUserRating(2)">☆</span>
+            <span id="star1" onclick="getUserRating(1)">☆</span>
+          </div>
+        </div>
+
+        <input
+          type="submit"
+          name="send_review"
+          value="SEND REVIEW"
+          id="new_review"
+        />
+      </div>
+    </div>
+
+    <!-- Viktig at footer.js er nederst i bodyen  -->
+    <script src="./javascript/reviews.js"></script>
+    <script src="./javascript/footer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,268 @@
+#homepageContainer {
+  margin: 50px;
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+#aboutUs {
+  display: flex;
+  margin-top: 100px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  width: 550px;
+  height: 490px;
+  padding: 5px;
+  display: block;
+  position: relative;
+  border: 4px solid #614035;
+  background-color: rgba(255, 250, 243, 0.86);
+}
+
+#aboutInfo {
+  float: left;
+}
+
+#aboutUs > h2 {
+  color: #614035;
+}
+
+#aboutInfo > p {
+  float: left;
+  width: 290px;
+  height: 100%;
+  margin: 5px;
+  font-size: 12.5px;
+  font-family: Andale Mono, AndaleMono, monospace, arial;
+  overflow: hidden;
+}
+
+#aboutImage {
+  float: right;
+  width: 220px;
+}
+
+#aboutImage2 {
+  display: none;
+  float: right;
+  width: 220px;
+}
+
+#aboutImage > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#aboutImage2 > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#openingHours {
+  margin-left: 10px;
+  margin-top: 100px;
+  width: 300px;
+  height: 100px;
+  border: 4px solid #401616;
+  padding: 10px;
+  background-color: #602121;
+}
+
+#openingTitle {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Andale Mono, AndaleMono, monospace, arial;
+  text-align: center;
+}
+
+#openingTitle > h3 {
+  margin: 0px;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+#openingTimes {
+  font-family: Andale Mono, AndaleMono, monospace, arial;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+  margin: 0px;
+}
+
+#openingTimes > p {
+  color: white;
+  font-size: 13px;
+}
+
+#homepageDaily {
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 320px;
+  height: 350px;
+  border: 4px solid #614035;
+  background-color: rgba(255, 250, 243, 0.86);
+}
+
+#homepageDaily > h1 {
+  line-height: 1em;
+  margin: 10px;
+}
+
+#homepageDaily > h2 {
+  font-family: Andale Mono, AndaleMono, monospace, arial;
+  color: #602121;
+  padding: 0px;
+  margin: 0px;
+  line-height: 1em;
+}
+
+#homepageDaily > p {
+  width: 150px;
+  font-family: Andale Mono, AndaleMono, monospace, arial;
+  font-size: small;
+  color: #602121;
+  padding: 10px;
+  margin: 0px;
+}
+
+#todayHeader {
+  font-size: 50px;
+  margin: 0px;
+  padding: 5px;
+  text-align: center;
+}
+
+#homepageDaily > img {
+  float: right;
+  max-width: 50%;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#homepageDaily > #price {
+  float: left;
+  font-size: 35px;
+  padding-left: 15px;
+  padding-top: 20px;
+  font-family: Andale Mono, AndaleMono, monospace, arial;
+  color: #404e31;
+  font-weight: bold;
+}
+
+#homepageDaily > #menuLink {
+  float: right;
+}
+
+#homepageDaily > #menuLink > img {
+  height: 60px;
+  width: 120px;
+  margin-top: 10px;
+  margin-right: 10px;
+  filter: drop-shadow(5px 5px 5px rgba(51, 41, 39, 0.637));
+}
+
+#homepageDaily > #menuLink > img:hover {
+  height: 65px;
+  width: 125px;
+}
+
+#dailyMenu {
+  max-width: 170px;
+  max-height: 170px;
+}
+
+@media only screen and (max-width: 1023px) {
+  #homepageContainer {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  #aboutUs {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+  }
+
+  #rightSide {
+    width: 69%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+  }
+
+  #openingHours {
+    margin-top: 20px;
+    margin-left: -15px;
+    margin-right: auto;
+    width: 100%;
+    height: 100px;
+  }
+
+  #homepageDaily {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 70px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #aboutUs {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  #aboutInfo {
+    width: 100%;
+  }
+
+  #aboutInfo > p {
+    width: 100%;
+  }
+
+  #aboutImage {
+    display: none;
+  }
+
+  #aboutImage2 {
+    display: block;
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  #rightSide {
+    height: 100%;
+    width: 90%;
+    flex-direction: column;
+  }
+
+  #openingHours {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: -5px;
+    width: 95%;
+  }
+
+  #homepageDaily {
+    width: 95%;
+  }
+
+  #homepageDaily > h2 {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  #menuLink {
+    margin-top: -20%;
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="shortcut icon" type="image/png" href="media/favicon.png" />
+    <title>Thanks a Latte: Menu</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="css/master.css"
+      type="text/css"
+      media="screen"
+    />
+  </head>
+
+  <body>
+    <div class="close_popup"></div>
+    <script src="./javascript/header.js"></script>
+    <div id="all">
+      <div id="popup"></div>
+      <div class="box">
+        <div class="menu_box">
+          <h1 class="headline">COLD BREW</h1>
+          <div id="coldbrew_items" class="menu_items"></div>
+        </div>
+        <div class="menu_box">
+          <h1 class="headline">WARM BREW</h1>
+          <div id="warmbrew_items" class="menu_items">
+            <ul>
+              <li class="name" onclick="showPopup()"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img src="media/coffee.jpg" id="coffee" alt="coffee" />
+      <div class="box2">
+        <div class="menu_box">
+          <h1 class="headline">DISHES</h1>
+          <div id="dishes_items" class="menu_items"></div>
+        </div>
+        <div class="menu_box">
+          <h1 class="headline">DESSERTS</h1>
+          <div id="desserts_items" class="menu_items">
+            <ul>
+              <li class="name" onclick="showPopup()"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./javascript/menu.js"></script>
+    <script src="./javascript/footer.js"></script>
+  </body>
+</html>

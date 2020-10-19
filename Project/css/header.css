@@ -1,0 +1,186 @@
+.header {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  height: 20vh;
+  background-image: url("../media/header_bg.jpg"),
+    linear-gradient(rgba(27, 17, 17, 0.26), rgba(27, 17, 17, 0.473));
+  background-blend-mode: overlay;
+  border-bottom: 1px solid #614035;
+  background-size: 100% 130%;
+}
+
+.header_container {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.menu_button,
+.daily_offers_button,
+.reviews_button,
+.contact_us_button {
+  display: inline-block;
+  width: 6em;
+  height: 3.5em;
+  border-radius: 100%;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: alike angular;
+  font-weight: 900;
+  font-size: 20px;
+  color: #3b2720;
+  border: 1.5px solid #4a3129;
+  background-color: rgba(148, 99, 83, 0.9);
+  text-align: center;
+  transition: all 0.2s;
+  align-self: flex-end;
+  cursor: pointer;
+  filter: drop-shadow(3px 0px 2px rgba(51, 41, 39, 0.637));
+  outline: none;
+}
+
+.menu_button {
+  margin: 0 0.3em -1.8em 0;
+}
+
+.daily_offers_button {
+  margin: 0 0em -1.8em 0;
+}
+
+.home_button {
+  transition: all 0.2s;
+  width: 350px;
+  height: 230px;
+  cursor: pointer;
+  filter: drop-shadow(10px 10px 10px rgba(51, 41, 39, 0.637));
+  margin: 20px 0px -110px 0px;
+  display: inline-block;
+  border-radius: unset;
+  box-sizing: none;
+  border: none;
+  background-color: none;
+  align-self: flex-end;
+}
+
+.home_button:hover {
+  width: 365px;
+  height: 245px;
+}
+
+.reviews_button {
+  margin: 0 0em -1.8em 0em;
+}
+
+.contact_us_button {
+  padding-top: 0.3em;
+  margin: 0 0.3em -1.8em 0.3em;
+}
+
+.menu_button:hover,
+.daily_offers_button:hover,
+.reviews_button:hover,
+.contact_us_button:hover {
+  background-color: rgba(167, 111, 92, 0.9);
+}
+
+/*MOBILE CSS
+/*Some of this code is insipred from W3schools,
+https://www.w3schools.com/howto/howto_js_sidenav.asp
+*/
+
+#mobile_version_header {
+  display: none;
+  height: 100px;
+  background-image: url("../media/header_bg.jpg");
+  border-bottom: 1px solid #614035;
+}
+
+#sideNavOpen {
+  align-self: flex-start;
+  font-size: 90px;
+  color: #3b2720;
+  background-color: rgb(148, 99, 83);
+  height: 112px;
+  border-right: 1px solid #614035;
+  cursor: pointer;
+}
+
+.home_button2 {
+  transition: all 0.2s;
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+  filter: drop-shadow(10px 10px 10px rgba(51, 41, 39, 0.637));
+  margin: 20px 0px -70px 0px;
+  margin-left: 25%;
+}
+
+.home_button2:hover {
+  width: 210px;
+  height: 160px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: #3b2720;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 30px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #fffaf3;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  padding-top: 20px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+/*responsive*/
+
+@media only screen and (max-width: 848px) {
+  #mobile_version_header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .home_button2 {
+    margin-left: 20%;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .home_button2 {
+    margin-left: 10%;
+  }
+}

@@ -1,0 +1,245 @@
+#page_container {
+  width: 100%;
+  min-height: 80vh;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: 0 auto;
+  margin-top: 13%;
+  display: flex;
+  flex-direction: row;
+}
+
+#all_reviews_container {
+  display: inline-flex;
+  flex-direction: column;
+  width: 45%;
+  margin: 0;
+}
+
+#give_review_container,
+#user_reviews,
+#latest_reviews_container {
+  display: inline-flex;
+  flex-direction: column;
+  height: auto;
+  background-color: rgba(255, 250, 243, 0.85);
+  border: 4px solid #614035;
+  padding: 10px;
+}
+
+.overall_rating {
+  display: flex;
+  flex-direction: column;
+}
+
+#overall_rating_text {
+  right: 0;
+  margin: 0;
+  float: right;
+  padding: 0;
+  top: 0;
+}
+
+#latest_reviews_container {
+  flex-direction: row;
+  margin-bottom: 0;
+  width: 100%;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 0;
+  left: 0;
+  line-height: 2em;
+}
+
+h2 {
+  font-size: 26px;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#user_reviews {
+  height: 25em;
+  max-height: 25em;
+  overflow-y: scroll;
+  width: 100%;
+  margin-top: 0;
+}
+
+#give_review_container {
+  padding-top: 10px;
+  min-width: 295px;
+  width: 27%;
+  margin-left: 50px;
+  height: 100%;
+}
+
+#userReview {
+  background-color: rgba(255, 250, 243, 0.86);
+  border: 1px solid #614035;
+  margin-bottom: 8px;
+  padding: 4px;
+}
+
+#userReview > p {
+  margin: 0;
+}
+
+#text_input_user {
+  height: 5em;
+  width: 97%;
+  background-color: white;
+  overflow: auto;
+  border: 1px solid #614035;
+  padding: 4px;
+}
+
+textarea {
+  margin-bottom: 10px;
+}
+
+#star_rating {
+  display: flex;
+  flex-direction: row;
+}
+
+input[type="email"] {
+  width: 70%;
+  margin-bottom: 10px;
+  border-left-width: 3px;
+}
+
+input[type="text"] {
+  width: 40%;
+  margin-bottom: 10px;
+  border-left-width: 3px;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  background-color: rgb(148, 99, 83);
+  color: #3b2720;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px rgb(116, 78, 65);
+  font-family: alike angular;
+  font-weight: 900;
+  border: 1.5px solid #473729;
+}
+
+#user_text_review {
+  border-left-width: 3px;
+}
+
+input:required:invalid,
+#user_text_review:required:invalid {
+  border-left-color: palevioletred;
+}
+input:required:valid,
+#user_text_review:required:valid {
+  border-left-color: palegreen;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(167, 111, 92);
+}
+
+input[type="submit"]:active {
+  background-color: rgb(121, 81, 67);
+  box-shadow: 0 5px rgb(116, 78, 65);
+  transform: translateY(4px);
+}
+
+span {
+  margin-top: -12px;
+  font-size: 25px;
+}
+
+/*Changes the direction the stars are written in, so that they are coloured from left to right in gold when the user hovers them.*/
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+
+/*Once hovered over, the original star is replaced with a gold, filled star.*/
+.rating > span:hover:before,
+.rating > span:hover ~ span:before,
+.checked {
+  content: "\2605";
+  position: absolute;
+  color: gold;
+  text-shadow: 0 0 4px rgb(211, 179, 0);
+  cursor: pointer;
+}
+
+/*CSS for the scrollbar in the user-reviews div*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(148, 99, 83);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(119, 80, 67);
+}
+
+/*Makes the page responsive once the width is below what was defined, (1024px)*/
+@media only screen and (max-width: 1023px) {
+  #page_container {
+    margin-top: 137px;
+    flex-flow: column-reverse;
+    height: 100%;
+  }
+
+  #all_reviews_container {
+    height: 40%;
+    width: 70%;
+    margin-left: 4%;
+  }
+
+  #give_review_container {
+    height: 40%;
+    width: 70%;
+    margin: 0;
+    margin-bottom: 50px;
+    margin-left: 4%;
+  }
+}
+
+/*Makes the page responsive on a mobile device.*/
+@media only screen and (max-width: 750px) {
+  #page_container {
+    margin-top: 30%;
+    margin-left: -7%;
+  }
+
+  #give_review_container {
+    width: 80%;
+  }
+
+  #all_reviews_container {
+    width: 80%;
+  }
+}
