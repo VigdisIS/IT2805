@@ -1,0 +1,14 @@
+1. Why do mobile phones usually ignore auto play on video elements?
+
+- Mobile phones usually ignore auto play on video elements due to it being internally disabled to prevent unsolicited cellular download. Usually, data providers charge based on the amount of data consumed. Should the video have started automatically, it could affect the users' data charges.
+
+
+2. What will the CSS snippet at the end of this section do if the visitor is browsing on a device with 320 x 568 resolution?
+
+- The 'only' keyword is used to prevent older browsers that do not support media queries with media features from applying the specified styles. Device-width describes the width of the output device. The code states that any resolution bigger than or equal to 768 px and less than or equal to 1025 px will hide or remove the logo div. The device resolution the visitor is browsing on is not within this area, so the logo will still display.
+
+
+3. Mention some of the advantages of having a single responsive website instead of
+dedicated versions like m.til.no for mobile and til.no for desktop?
+
+- Having a single responsive website instead of dedicated versions like m.til.no for mobile and til.no for desktop comes with a few advantages. Having only one website means having only one URL, which makes sure your users will find the page on mobile devices without having to wait for redirects. It’s also in general easier to administer just one website for all devices.

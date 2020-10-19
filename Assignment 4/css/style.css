@@ -1,0 +1,66 @@
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: white;
+    font-family: arial, sans-serif;
+  }
+
+  #screen {
+    position: relative;
+    height: auto;
+  }
+
+  video {
+    height: auto;
+    width: 100%;
+  }
+
+  #title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #title>img {
+    width: 100%;
+  }
+
+  article {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    display: block;
+    height: auto;
+
+  }
+
+  p {
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  #mobil_bilde>img {
+    display: none;
+  }
+
+  @media only screen and (max-width: 940px) {
+    video {
+      display: none;
+    }
+
+    #mobil_bilde>img {
+      position: relative;
+      height: auto;
+      width: 100%;
+      display: inline;
+    }
+
+
+
+  }

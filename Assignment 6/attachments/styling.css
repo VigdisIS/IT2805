@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/spooky_bakgrunn2.jpg.png);
+}
+
+#formboxuwu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  height: auto;
+}
+
+form {
+  width: 70%;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-left-width: 3px;
+}
+
+select {
+  height: 35px;
+}
+
+input[type="number"] {
+  width: 20%;
+  padding: 2px 5px;
+  padding-left: 15px;
+  height: 35px;
+}
+
+input:required:invalid,
+select:required:invalid {
+  border-left-color: palevioletred;
+}
+input:required:valid,
+select:required:valid {
+  border-left-color: palegreen;
+}
+
+label {
+  padding: 10px 5px 0px 2px;
+  display: inline-block;
+  font-size: 15px;
+  font-family: "papyrus";
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: pink;
+  color: white;
+  padding: 14px 20px;
+  margin: 30px 0 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

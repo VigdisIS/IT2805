@@ -1,0 +1,118 @@
+* {
+  font-family: "OCR A Std";
+}
+
+body {
+  box-sizing: border-box;
+  background-image: url(media/16280.jpg);
+}
+
+#container,
+#bossfightMonkaMEGA,
+#s4nsOmegalul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  background: black;
+  padding: 20px;
+  height: auto;
+  border: white solid 5px;
+  color: white;
+}
+
+#s4nsOmegalul {
+  border: none;
+}
+
+#uselessToolBar,
+#fight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-top: -17px;
+}
+
+#hpBar {
+  width: 90px;
+  height: 19px;
+  background-color: yellow;
+  margin-top: -5px;
+}
+
+#textowo {
+  margin-bottom: -20px;
+  margin-right: -280px;
+}
+
+#fight_button {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px #b8511a;
+  cursor: pointer;
+}
+
+#fight_button:active {
+  box-shadow: 0 5px #994214;
+  transform: translateY(4px);
+}
+
+input[type="submit"] {
+  padding: 5px 10px;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px #999;
+}
+
+input[type="submit"]:hover {
+  background-color: #ebebeb;
+}
+
+input[type="submit"]:active {
+  background-color: #cccccc;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#taskField {
+  margin: 15px;
+  padding: 5px;
+  background-color: white;
+  height: auto;
+  width: 60%;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  float: left;
+}
+
+#output {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+}
+
+#done,
+#active {
+  margin: 5px;
+  padding: 5px;
+}
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}

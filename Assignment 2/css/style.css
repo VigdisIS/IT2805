@@ -1,0 +1,23 @@
+h1 {
+  font-family: Helvetica;
+}
+
+h2 {
+  font-family: Georgia;
+}
+
+p {
+  font-family: fantasy, Helvetica;
+}
+
+img {
+  width: 150px;
+  height: auto;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+}
+
+body {
+  background-color: #faf5cd;
+}

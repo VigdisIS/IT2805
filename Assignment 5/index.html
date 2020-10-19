@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>IT2805 assignment 5: JavaScript introduction</title>
+
+    <style>
+      .box {
+        /* Sets the size and position of each box */
+        width: 200px;
+        height: 200px;
+        background-color: #185d8b;
+        margin: 10px;
+
+        /* Sets the font within each box*/
+        color: #fff;
+        font-family: Helvetica, Arial, sans-serif;
+        text-align: center;
+        line-height: 200px;
+        font-size: 100px;
+      }
+
+      .buttons {
+        width: 200px;
+        margin: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="title"></h1>
+
+    <h2>Part 5</h2>
+    <div class="buttons">
+      <button onclick="changeDisplay()">Display: none</button>
+      <button onclick="changeVisibility()">Visibility: hidden</button>
+      <button onclick="reset()">Reset</button>
+    </div>
+    <div
+      class="box"
+      id="magic"
+      onmouseover="showSpook()"
+      onmouseout="hideSpook()"
+    >
+      <img
+        style="visibility: hidden;display: none;width:200px;height: 200px"
+        id="dootdoot"
+        src="owo/dwootdwoot.gif"
+        alt="Spwook"
+      />
+      <p id="1" style="padding: 0;margin:0">1</p>
+    </div>
+
+    <div class="box">2</div>
+
+    <h2>Part 6</h2>
+    <ul id="tech"></ul>
+
+    <script src="./script.js"></script>
+    <!--Adding the <script> tag to the bottom of the body-element because if the <script>-tag were
+      in the head-element or above some of the page-code, the page would crash as a result of the
+      JavaScript crashing. The javaScript can also take some time to load, so the page can
+      load faster if the <scipt>-tage is placed here instead.-->
+  </body>
+</html>
